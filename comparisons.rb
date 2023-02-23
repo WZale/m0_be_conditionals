@@ -23,25 +23,31 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
 # this should print: true
+puts "Is number_teachers less than number_students?", number_teachers < number_students
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
 # this should print: false
+puts "Is number_teachers equal to number_students?", number_teachers == number_students
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
 # this should print: true
+puts "Is number_teachers not equal to number_students?", number_teachers != number_students
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
 # this should print: true
+puts "Is number_students greater than or equal to 20?", number_students >= 20
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
 # this should print: false
+puts "Is number_students greater than or equal to 20?", number_students >= 21
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
 # this should print: true
+puts "Is number_students less than or equal to 20?", number_students <= 20
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
 # this should print: true
-
+puts "Is number_students less than or equal to 21?", number_students <= 21
 
 #-------------------
 # PART 2: Articulating what you are doing
@@ -54,21 +60,27 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 
 puts 4 < 9
 #YOU DO: Explain.
+#This comparison will evaluate as true, because it is checking to see if 4 is less than 9
 
 books = 3
 puts 4 < books
 # YOU DO: Explain.
+#This comparison will evaluate as false, because the stored value of books is three, and the condition
+#is checking to see if 4 is less than three
 
 friends = 6
 siblings = 2
 puts friends > siblings
 # YOU DO: Explain.
+#This comparison will evaluate as true, because the stored value of the variable friends is 6 and the 
+#stored value of siblings is 2. The comparison is asking if 6 is greater than 2.
 
 attendees = 9
 meals = 8
 puts attendees != meals
 # YOU DO: Explain.
-
+#This comparison will evaluate as true, because the stored value of the variable attendees is 9 and the 
+#stored value of the variable meals is 8. The comparison is asking if 9 is not equal to 8.
 
 #-------------------
 # PART 3: Logical Operators
@@ -90,15 +102,17 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+puts loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
+puts loves_to_play && is_a_puppy
 
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: NameError (undefined local variable or method `is_a_puppy' for main:Object) is_a_puppy is not stored as a variable,
+# so Ruby returns that the variable is undefined (which makes sense, as we haven't defined it yet!)
